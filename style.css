@@ -1,0 +1,165 @@
+:root {
+    --primary: #a1b0fc;
+    --secondary: #424d83;
+    --white: #fff;
+    --black: #000;
+    --font: 16px;
+    --body: #f1f3ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--font);
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.bg-body {
+    background: var(--body) !important;
+}
+
+
+.py-5 {
+    padding: 150px 0 !important;
+}
+
+.py-4 {
+    padding: 100px 0 !important;
+}
+
+.py-3 {
+    padding: 50px 0 !important;
+}
+
+.py-2 {
+    padding: 20px 0 !important;
+}
+.btn-primary {
+    background-color: var(--primary) !important;
+    border: 0 !important;
+}
+
+.tekst1 {
+    animation: naDesno;
+    animation-duration: 1s !important;
+}
+
+.slika3 {
+    animation: toLeft;
+    animation-duration: 1s;
+}
+
+@keyframes naDesno {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes toLeft {
+    from {
+        transform: translateX(300%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.navbar  {
+    background: var(--secondary) !important;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px;
+}
+
+.navbar .nav-link {
+    color: var(--white) !important;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+header {
+    background-image: url(img/hero.png);
+    background-position: center;
+    height: 90vh;
+    background-size: cover;
+    color: var(--white);
+}
+
+header h6  {
+    font-size: 1.1rem;
+    padding: 20px 0;
+}
+
+.img {
+    flex: 0 0 10%;
+}
+.img img {
+    width: 100%;
+}
+
+.text {
+    flex: 0 0 80%;
+}
+
+.sekcija2 {
+    background-color: var(--body);
+    padding: 30px;
+}
+
+.sekcija2 .card {
+    color: #fff;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 15px;
+}
+
+.table {
+    overflow: hidden;
+}
+
+.table .card span {
+    font-size: 1rem;
+}
+
+.table .card  {
+    box-shadow: 0 0 5px #000;
+    border: 0;
+    border-top: 5px solid var(--secondary);
+    border-radius: 10px;
+}
+
+
+
+footer {
+    background: url(../img/footer-bg.png);
+    background-size: cover;
+    padding: 40vh 0 20vh 0;
+    color: var(--white);
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+}
+
+footer a:hover {
+    color: yellowgreen;
+}
